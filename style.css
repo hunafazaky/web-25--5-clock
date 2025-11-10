@@ -1,40 +1,37 @@
 main {
+  background-color: darkgray;
+  border: .2em solid #444;
+  border-radius: .2em;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 300px;
   margin: auto;
+  padding: 10px;
+  font-size: large;
 }
 
 button {
-  font-size: x-large;
-}
-
-#display {
-  background-color: darkgrey;
-  width: 100%;
-  text-align: end;
-  padding: 0.5em;
-  margin: 0.5em;
-  font-size: x-large;
-}
-
-#clear {
-  grid-column: span 2;
-}
-
-#numbers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  font-size: large;
   aspect-ratio: 1;
-  margin: 0;
 }
 
-#actions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  aspect-ratio: 2;
+.action {
+  width: 50%;
+}
+
+.display {
+  margin: auto;
+}
+
+.num-display {
+  background-color: #444;
+  border: .2em solid white;
+  border-radius: .2em;
+  color: white;
+  width: 3em;
+  margin: 0.2em auto;
+  padding: 1em;
 }

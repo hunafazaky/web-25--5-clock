@@ -8,29 +8,28 @@
   </head>
   <body>
     <main>
-      <section id="display">0</section>
-      <section id="actions">
-        <button id="clear">AC</button>
-        <button id="add">+</button>
-        <button id="subtract">-</button>
-        <button id="multiply">x</button>
-        <button id="divide">/</button>
+      <audio id="beep"></audio>
+
+      <section class="action">
+        <div id="break-label">Break Length</div>
+        <div class="num-display" id="break-length">5</div>
+        <button id="break-increment">&#9650;</button>
+        <button id="break-decrement">&#9660;</button>
       </section>
-      <section id="numbers">
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="zero">0</button>
-        <button id="decimal">.</button>
-        <button id="equals">=</button>
+      <section class="action">
+        <div id="session-label">Session Length</div>
+        <div class="num-display" id="session-length">25</div>
+        <button id="session-increment">&#9650;</button>
+        <button id="session-decrement">&#9660;</button>
       </section>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.js"></script>
+      <section class="display">
+        <div id="timer-label">Session</div>
+        <div class="num-display" id="time-left">
+          <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <button id="start_stop">&#9658;</button>
+        <button id="reset">&#10226;</button>
+      </section>
       <script src="main.js"></script>
     </main>
   </body>
